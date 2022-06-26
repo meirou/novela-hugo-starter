@@ -4,6 +4,13 @@ auto_deploy: false
 admin_path: ''
 webhook_url: 
 sections:
+- type: directory
+  path: test
+  label: test
+  create: all
+  match: "**/*"
+  templates:
+  - post
 - type: heading
   label: this is side bar
 - type: heading
